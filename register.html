@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Register Users</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" method="post">
+            <h2>Register</h2>
+            <label for="full-name">Full name</label>
+            <input type="text" id="full-name" placeholder="Insert your full name">
+            <label for="birth-date">Birth</label>
+            <input type="date" id="birth-date">
+            <label for="age">Age</label>
+            <input type="number" id="age" placeholder="Type your age">
+            <div class="checkbox-label">
+                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                <label for="subscribe">Receive email notifications?</label>
+            </div>
+            <label for="options">Select which course you want to take</label>
+            <select id="options">
+                <option value="option1">C++ Basic</option>
+                <option value="option2">C++ intermediate</option>
+                <option value="option3">Java Basic</option>
+                <option value="option4">Java intermediate</option>
+                <option value="option5">Python Basic</option>
+            </select>
+
+            <div class="menu"> 
+                <button type="submit">Register</button> 
+                <a href="index.html" id="btvoltar">Back</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

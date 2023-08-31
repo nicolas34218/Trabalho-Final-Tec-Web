@@ -1,0 +1,121 @@
+
+body {
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  background-image:linear-gradient(to left, blue, orangered, yellow);
+  background-size: 500% 100%;
+  animation: degrade 10s infinite alternate;
+}
+
+@keyframes degrade {
+  0% {
+    background-position-x: 0%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+
+.container {
+  justify-content: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+button {
+  padding: 10px;
+  background-color: #93003a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #6c0027;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+a {
+  color: #93003a;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6c0027;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 0;
+}
+
+.menu {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 75px;
+  margin-left: 75px;
+  margin-top: 20px;
+}
+
+#submit {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
